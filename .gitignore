@@ -10,7 +10,6 @@ out/
 # Dotenv file
 .env
 .idea
-lib
 node_modules
 .env
 coverage
