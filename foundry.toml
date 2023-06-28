@@ -4,3 +4,4 @@ out = 'out'
 libraries = []
 optimizer = true
 optimizer_runs = 20
+ffi = true
