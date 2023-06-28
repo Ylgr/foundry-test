@@ -72,4 +72,13 @@ contract TokenERC20Test is Test {
     function invariant_test_mint_token() public {
         assertGe(handler.totalMint(), 0);
     }
+
+    function test_ffi() public {
+        string[] memory cmds = new string[](3);
+        cmds[0] = "npx";
+        cmds[1] = "hardhat";
+        cmds[2] = "--version";
+        bytes memory output = vm.ffi(cmds);
+        assertEq(output, "2.16.0");
+    }
 }
